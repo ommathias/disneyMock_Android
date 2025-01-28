@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@drawable/layout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profile1"
+        style="@style/parametros"
+        app:shapeAppearanceOverlay="@style/CircularImage"
+        android:src="@drawable/perfil1"
+        tools:layout_editor_absoluteX="240dp"
+        tools:layout_editor_absoluteY="358dp" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_perfil6"
+        style="@style/parametros"
+        app:shapeAppearanceOverlay="@style/CircularImage"
+        android:src="@drawable/perfil6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/iv_perfil5"
+        app:layout_constraintTop_toBottomOf="@+id/iv_perfil3" />
+
+    <ImageView
+        android:id="@+id/iv_perfil1"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/circle_background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/perfil1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toEndOf="@+id/iv_perfil2"
+        app:layout_constraintTop_toBottomOf="@+id/iv_perfil6" />
+
+    <ImageView
+        android:id="@+id/iv_perfil7"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/perfil7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="538dp" />
+
+    <ImageView
+        android:id="@+id/iv_perfil2"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/circle_background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/perfil2"
+        app:layout_constraintTop_toBottomOf="@+id/iv_perfil5"
+        tools:layout_editor_absoluteX="37dp" />
+
+    <ImageView
+        android:id="@+id/iv_perfil4"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="44dp"
+        android:background="@drawable/circle_background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/perfil4"
+        app:layout_constraintEnd_toStartOf="@+id/iv_perfil3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="75dp" />
+
+    <ImageView
+        android:id="@+id/iv_perfil5"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/circle_background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/perfil5"
+        app:layout_constraintEnd_toStartOf="@+id/iv_perfil6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_perfil4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

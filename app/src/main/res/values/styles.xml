@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CircularImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+
+    <style name = "parametros">
+       <item name = "android:layout_width">100dp</item>
+        <item name = "android:layout_height">100dp</item>
+        <item name = "android:scaleType">centerCrop</item>
+    </style>
+
+
+    <style name="RoudendImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10dp</item>
+    </style>
+    <style name="ButtonCircle" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/round_button</item>
+        <item name="android:padding">10dp</item>
+    </style>
+    <style name="ButtonPlus" parent="ButtonCircle">
+        <item name="android:src">@drawable/ic_plus</item>
+    </style>
+    <style name="ButtonDownload" parent="ButtonCircle">
+        <item name="android:src">@drawable/ic_download</item>
+    </style>
+
+
+    <style name="ImageViewBorder">
+        <item name="cornerSize">10%</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item> <!-- Barra de status transparente -->
+        <item name="android:statusBarColor">@android:color/transparent</item> <!-- Cor transparente -->
+    </style>
+</resources>

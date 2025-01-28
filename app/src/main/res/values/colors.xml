@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="backgroundTop">#FF0000</color> <!-- Vermelho -->
+    <color name="backgroundCenter">#00FF00</color> <!-- Verde -->
+    <color name="backgroundBotton">#0000FF</color> <!-- Azul -->
+    <color name="backgroundIcon2">#FF5722</color> <!-- Adicione sua cor aqui -->
+
+
+</resources>

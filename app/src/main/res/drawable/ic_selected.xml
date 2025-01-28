@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+  <solid android:color="@android:color/white" /> <!-- Cor de fundo branca -->
+  <corners android:topLeftRadius="5dp" android:topRightRadius="5dp" /> <!-- Cantos arredondados no topo -->
+  <size android:height="5dp" /> <!-- Altura fixa de 5dp -->
+</shape>
