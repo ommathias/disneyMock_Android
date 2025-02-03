@@ -7,8 +7,7 @@
 
 
     <style name = "parametros">
-       <item name = "android:layout_width">100dp</item>
-        <item name = "android:layout_height">100dp</item>
+
         <item name = "android:scaleType">centerCrop</item>
     </style>
 
@@ -28,9 +27,14 @@
         <item name="android:src">@drawable/ic_download</item>
     </style>
 
+    <style name="RoundedCornerImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
 
     <style name="ImageViewBorder">
-        <item name="cornerSize">10%</item>
+        <item name="cornerSize">50%</item>
     </style>
 
     <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">

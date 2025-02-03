@@ -1,93 +1,228 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:background="@drawable/layout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/nome1"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Carlos"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.212"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_perfil4" />
+
+    <TextView
+        android:id="@+id/nome2"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Andre"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_perfil1" />
+
+    <TextView
+        android:id="@+id/nome3"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Joani"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_perfil2" />
+
+    <TextView
+        android:id="@+id/nome4"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Ivone"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_perfil3" />
+
+    <TextView
+        android:id="@+id/nome5"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Clarice"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.79"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_perfil4" />
+
+    <TextView
+        android:id="@+id/nome6"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Detude"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/nome4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_perfil5" />
+
+    <TextView
+        android:id="@+id/nome7"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Jones"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/nome3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_perfil7" />
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Quem está assistindo?"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/profile1"
-        style="@style/parametros"
+        android:id="@+id/iv_perfil1"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_height"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/circle_background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/perfil3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
         app:shapeAppearanceOverlay="@style/CircularImage"
-        android:src="@drawable/perfil1"
-        tools:layout_editor_absoluteX="240dp"
-        tools:layout_editor_absoluteY="358dp" />
+        style="@style/parametros" />
 
     <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/iv_perfil6"
-        style="@style/parametros"
+        android:id="@+id/iv_perfil2"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_height"
+        android:scaleType="centerCrop"
+        android:src="@drawable/perfil7"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_perfil7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/iv_perfil7"
+        app:layout_constraintTop_toTopOf="@+id/iv_perfil7"
         app:shapeAppearanceOverlay="@style/CircularImage"
+        style="@style/parametros" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_perfil3"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_height"
+        android:scaleType="centerCrop"
         android:src="@drawable/perfil6"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_perfil5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/iv_perfil5"
-        app:layout_constraintTop_toBottomOf="@+id/iv_perfil3" />
+        app:layout_constraintTop_toTopOf="@+id/iv_perfil5"
+        app:shapeAppearanceOverlay="@style/CircularImage"
+        style="@style/parametros" />
 
-    <ImageView
-        android:id="@+id/iv_perfil1"
-        android:layout_width="150dp"
-        android:layout_height="140dp"
-        android:layout_marginTop="92dp"
-        android:background="@drawable/circle_background"
-        android:scaleType="centerCrop"
-        android:src="@drawable/perfil1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.459"
-        app:layout_constraintStart_toEndOf="@+id/iv_perfil2"
-        app:layout_constraintTop_toBottomOf="@+id/iv_perfil6" />
-
-    <ImageView
-        android:id="@+id/iv_perfil7"
-        android:layout_width="150dp"
-        android:layout_height="140dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/perfil7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="538dp" />
-
-    <ImageView
-        android:id="@+id/iv_perfil2"
-        android:layout_width="150dp"
-        android:layout_height="140dp"
-        android:layout_marginTop="25dp"
-        android:background="@drawable/circle_background"
-        android:scaleType="centerCrop"
-        android:src="@drawable/perfil2"
-        app:layout_constraintTop_toBottomOf="@+id/iv_perfil5"
-        tools:layout_editor_absoluteX="37dp" />
-
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/iv_perfil4"
-        android:layout_width="150dp"
-        android:layout_height="140dp"
-        android:layout_marginStart="44dp"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_height"
         android:background="@drawable/circle_background"
         android:scaleType="centerCrop"
         android:src="@drawable/perfil4"
-        app:layout_constraintEnd_toStartOf="@+id/iv_perfil3"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="75dp" />
-
-    <ImageView
-        android:id="@+id/iv_perfil5"
-        android:layout_width="150dp"
-        android:layout_height="140dp"
-        android:layout_marginTop="25dp"
-        android:background="@drawable/circle_background"
-        android:scaleType="centerCrop"
-        android:src="@drawable/perfil5"
+        app:layout_constraintBottom_toTopOf="@+id/iv_perfil5"
         app:layout_constraintEnd_toStartOf="@+id/iv_perfil6"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iv_perfil4" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        app:shapeAppearanceOverlay="@style/CircularImage"
+        style="@style/parametros" />
 
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_perfil7"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_height"
+        android:background="@drawable/circle_background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/perfil2"
+        app:layout_constraintBottom_toTopOf="@+id/iv_perfil1"
+        app:layout_constraintEnd_toStartOf="@+id/iv_perfil2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_perfil5"
+        app:layout_constraintVertical_bias="0.5"
+        app:shapeAppearanceOverlay="@style/CircularImage"
+        style="@style/parametros" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_perfil5"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_height"
+        android:background="@drawable/circle_background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/perfil5"
+        app:layout_constraintBottom_toTopOf="@+id/iv_perfil7"
+        app:layout_constraintEnd_toStartOf="@+id/iv_perfil3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_perfil4"
+        app:layout_constraintVertical_bias="0.5"
+        app:shapeAppearanceOverlay="@style/CircularImage"
+        style="@style/parametros" />
+
+    <!-- Imagem 7 -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_perfil6"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_height"
+        android:scaleType="centerCrop"
+        android:src="@drawable/perfil1"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_perfil4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/iv_perfil4"
+        app:layout_constraintTop_toTopOf="@+id/iv_perfil4"
+        app:layout_constraintVertical_bias="1.0"
+        app:shapeAppearanceOverlay="@style/CircularImage"
+        style="@style/parametros" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

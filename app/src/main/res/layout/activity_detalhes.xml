@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient_icon"
+
+
+    tools:context=".Detalhes">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/capa"
+        android:layout_width="412dp"
+        android:layout_height="239dp"
+
+        android:layout_marginTop="-5dp"
+        android:src="@drawable/img_capa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/RoundedCornerImage" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/titulo"
+        android:layout_width="265dp"
+        android:layout_height="135dp"
+
+        android:src="@drawable/logo_capa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/capa"
+        app:shapeAppearanceOverlay="@style/RoundedCornerImage" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/play"
+        android:layout_width="66dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="372dp"
+        android:src="@drawable/ic_play"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/RoundedCornerImage" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/add"
+        android:layout_width="66dp"
+        android:layout_height="37dp"
+
+        android:layout_marginTop="4dp"
+        android:src="@drawable/ic_plus"
+        app:layout_constraintStart_toEndOf="@+id/download"
+        app:layout_constraintTop_toBottomOf="@+id/titulo"
+        app:shapeAppearanceOverlay="@style/RoundedCornerImage" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/download"
+        android:layout_width="66dp"
+        android:layout_height="37dp"
+
+        android:layout_marginTop="4dp"
+        android:src="@drawable/ic_download"
+        app:layout_constraintStart_toEndOf="@+id/play"
+        app:layout_constraintTop_toBottomOf="@+id/titulo"
+        app:shapeAppearanceOverlay="@style/RoundedCornerImage" />
+
+    <TextView
+        android:id="@+id/playText"
+        android:layout_width="81dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="PLAY"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/play" />
+
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="300dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="128dp"
+        android:gravity="left"
+        android:text="This is the final part of the Avengers Franchize aiming to grant disney another two bilion dollars with
+easy jokes, a lot of CGI and overpaid medium actors."
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/voltar"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/RoundedCornerImage" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/mirror"
+        android:layout_width="40dp"
+        android:layout_height="23dp"
+
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_mirroring_screen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/RoundedCornerImage" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
